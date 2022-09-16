@@ -1,0 +1,40 @@
+pipeline {
+    agent any
+    stages {
+        stage('CLONING THE CODE FROM GITHUB') {
+            steps {
+                echo"cloning the code from git hub"
+            }
+        }
+        
+        stage('BUILDING THE CODE') {
+            steps {
+                echo"building the code"
+            }
+        }
+        
+        stage('TESTING THE CODE') {
+            steps {
+                echo"testing the code"
+            }
+        }
+        
+        stage('DEPLOYING THE APPLICATION ON SERVERS') {
+            steps {
+                echo"deploying in test level"
+            }
+        }
+        
+        stage('RELEASE ON TO PRODUCTION SERVERS') {
+            steps {
+                echo"deployment on prod servers"
+            }
+        }
+        
+        stage('DEVELOPER FEEDBACK') {
+            steps {
+                echo"feedback"
+            }
+        }
+    }
+}
